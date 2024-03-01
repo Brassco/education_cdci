@@ -1,10 +1,10 @@
 name: Push into main
 
-on: 
+on:
   push:
-    branches: ["main"]
+    branches: ['main']
 
-jobs: 
+jobs:
   #First job
   install-and-test:
     runs-on: ubuntu-latest
@@ -17,7 +17,7 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: "npm"
+          cache: 'npm'
 
       - name: Install Node modules
         run: npm ci
@@ -27,9 +27,3 @@ jobs:
 
       - name: Unit & Integration tests
         run: npm test
-
-      - name: Jest coverage report
-        uses: ArtiomTr/jest-coverage-report-action@v2.0.6
-        with:
-          coverage-file: ./jest-report.json
-          base-coverage-file: ./jest-report.json
