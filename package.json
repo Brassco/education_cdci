@@ -8,7 +8,9 @@
     "lint": "eslint .",
     "start": "react-native start",
     "test": "jest",
-    "prepare": "husky"
+    "prepare": "husky",
+    "preci": "rm -fr node_modules",
+    "ci": "npm install"
   },
   "dependencies": {
     "@apollo/react-hooks": "^4.0.0",
