@@ -1,0 +1,5 @@
+echo \”[Husky] pre-commit\” 
+echo \”[Husky] run lint\” && npm run lint 
+echo \”[Husky] run prettier-check\” && npm run prettier-check 
+echo \”[Husky] run prettier-format\” && npm run prettier-format 
+echo \”[Husky] run test\” && npm run test

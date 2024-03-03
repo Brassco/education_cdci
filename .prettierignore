@@ -1,0 +1,20 @@
+# Ignore artifacts:
+ios
+android
+.history
+.husky
+.bundle
+.github
+node_modules
+vendor
+__tests__
+
+#ignore files
+**/*.config
+**/*.config.*
+**/*-lock.json
+package.json
+**/*.md
+**/*rc.js
+**/*config
+**/*config.json
